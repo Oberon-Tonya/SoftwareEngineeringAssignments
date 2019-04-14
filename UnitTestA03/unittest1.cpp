@@ -47,6 +47,8 @@ namespace UnitTestA03
 			std::vector<int> a = {0, 1,-2,3,-4,5,-6,7 };
 			RangeBlock rb = MaxSubArray(a);
 			Assert::AreEqual(rb.sum, 7);
+			Assert::AreEqual(rb.start, 7);
+			Assert::AreEqual(rb.end, 7);
 		}
 	};
 }
