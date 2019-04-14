@@ -34,6 +34,14 @@ namespace UnitTestA03
 			Assert::AreEqual(rb.start, 0);
 			Assert::AreEqual(rb.end, 9);
 		}
+		TEST_METHOD(TestInhaling) // S4ºÍS5
+		{
+			std::vector<int> a = { 1, 3,-2,-3,0,0,-6,-10 };
+			RangeBlock rb = MaxSubArray(a);
+			Assert::AreEqual(rb.sum, 4);
+			Assert::AreEqual(rb.start, 0);
+			Assert::AreEqual(rb.end, 1);
+		}
 		TEST_METHOD(TestNormal)
 		{
 			std::vector<int> a = { 1,3,2,-4,0,5,8,-1,-10 };

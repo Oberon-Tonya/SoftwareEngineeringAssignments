@@ -31,9 +31,5 @@ RangeBlock MaxSubArray(vector<int> arry)
 		}
 	}
 	rb.sum = maxsum;
-	/*if (rb.start >= arry.size())
-	{
-		rb.start = rb.end = -1;
-	}*/
 	return rb;
 }
