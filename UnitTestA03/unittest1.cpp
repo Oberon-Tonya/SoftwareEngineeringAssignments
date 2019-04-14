@@ -44,11 +44,9 @@ namespace UnitTestA03
 		}
 		TEST_METHOD(TestOscillating)
 		{
-			std::vector<int> a = {0, 1,-2,3,-4,5,-6 };
+			std::vector<int> a = {0, 1,-2,3,-4,5,-6,7 };
 			RangeBlock rb = MaxSubArray(a);
-			Assert::AreEqual(rb.sum, 5);
-			Assert::AreEqual(rb.start, 5);
-			Assert::AreEqual(rb.end, 5);
+			Assert::AreEqual(rb.sum, 7);
 		}
 	};
 }
